@@ -3,11 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { Provider } from 'react-redux'
-import CounterStore from './store/CouterStore.js'
+// import CounterStore from './RTK/CounterStore.js'
+import UserStore from './CrudToolKIt/UserStore.js'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Provider store={CounterStore}>
+    <Provider store={UserStore}>
     <App />
     </Provider>
   </StrictMode>,
